@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Oferta - Tecnología para Todos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav>
+  <button class="menu-toggle">☰</button>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="oferta.html">Oferta</a></li>
+    <li><a href="aprendizaje.html">¿Qué aprenderás?</a></li>
+    <li><a href="comunidad.html">Comunidad</a></li>
+    <li><a href="empieza.html">Empieza Hoy</a></li>
+  </ul>
+</nav>
+
+  <section id="oferta">
+  <h2>🎁 Nuestra Oferta Especial</h2>
+  <p>¡Aprender tecnología nunca fue tan fácil y accesible! En <strong>Tecnología para Todos</strong> te ofrecemos programas diseñados para cada etapa de la vida, con beneficios únicos:</p>
+  
+  <ul>
+    <li>💡 <strong>Aprendizaje práctico</strong>: proyectos reales que te preparan para el futuro.</li>
+    <li>📜 <strong>Asesorias Presenciales</strong></li>
+    <li>🕒 <strong>Flexibilidad total</strong>: cursos presenciales, adaptados a tu ritmo.</li>
+      <ul>
+        <li>Paquetes familiares: aprende junto a tus hijos</li>
+        <li>Curso gratuito para todos los estudiantes</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><em>Inscríbete hoy y recibe un bono especial: acceso gratuito a nuestro taller de Inteligencia Artificial.</em></p>
+
+  <!-- Botón funcional -->
+  <div class="cta">
+    <a href="empieza.html">
+      <button>¡Aprovecha la Oferta!</button>
+    </a>
+  </div>
+</section>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

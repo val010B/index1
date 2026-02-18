@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comunidad - Tecnología para Todos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+  <button class="menu-toggle">☰</button>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="oferta.html">Oferta</a></li>
+    <li><a href="aprendizaje.html">¿Qué aprenderás?</a></li>
+    <li><a href="comunidad.html">Comunidad</a></li>
+    <li><a href="empieza.html">Empieza Hoy</a></li>
+  </ul>
+</nav>
+
+  <section id="comunidad">
+  <h2>🌎 Una comunidad para todos</h2>
+  <p>Aprender tecnología no es solo escribir código: es resolver problemas, crear soluciones y formar parte del futuro. En nuestra comunidad encontrarás:</p>
+  
+  <div class="community-grid">
+    <div class="community-item">
+      <h3>🤝 Colaboración</h3>
+      <p>Conecta con estudiantes de todas las edades, comparte proyectos y aprende en equipo.</p>
+    </div>
+    <div class="community-item">
+      <h3>💬 Foros y Mentoría</h3>
+      <p>Participa en debates, recibe apoyo de mentores y resuelve dudas en un entorno seguro.</p>
+    </div>
+    <div class="community-item">
+      <h3>🌟 Inspiración</h3>
+      <p>Descubre historias de éxito, motívate con proyectos destacados y encuentra nuevas oportunidades.</p>
+    </div>
+    <div class="community-item">
+      <h3>🎉 Eventos y Retos</h3>
+      <p>Hackatones, talleres y retos creativos que ponen a prueba tus habilidades y te ayudan a crecer.</p>
+    </div>
+  </div>
+
+  <p><em>Nuestra metodología es clara, práctica, inclusiva y adaptada a cada edad. Aquí todos tienen un lugar.</em></p>
+
+  <div class="cta">
+    <a href="empieza.html">
+      <button>¡Únete a la Comunidad!</button>
+    </a>
+  </div>
+</section>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

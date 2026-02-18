@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Empieza Hoy - Tecnología para Todos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+  <button class="menu-toggle">☰</button>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="oferta.html">Oferta</a></li>
+    <li><a href="aprendizaje.html">¿Qué aprenderás?</a></li>
+    <li><a href="comunidad.html">Comunidad</a></li>
+    <li><a href="empieza.html">Empieza Hoy</a></li>
+  </ul>
+</nav>
+
+  <section id="empieza">
+  <h2>✨ Empieza Hoy</h2>
+  <p>No importa tu edad, tu experiencia o tu objetivo. Lo único que necesitas es curiosidad y ganas de aprender. 
+  La tecnología es para todos, y tú también puedes dominarla.</p>
+
+  <!-- Beneficios rápidos -->
+  <ul>
+    <li>✅ Inscripción sencilla y rápida</li>
+    <li>✅ Acceso inmediato a cursos introductorios</li>
+    <li>✅ Promociones exclusivas para nuevos estudiantes</li>
+  </ul>
+
+  <!-- Formulario funcional -->
+  <form action="gracias.html" method="post" class="signup-form">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="5" max="100" required>
+
+    <button type="submit">¡Inscríbete Ahora!</button>
+  </form>
+
+  <p><em>Al registrarte hoy, recibirás acceso gratuito a nuestro curso introductorio de programación.</em></p>
+</section>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

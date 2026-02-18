@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Gracias por inscribirte!</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .thanks-section {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: fadeInUp 1s ease;
+    }
+
+    .thanks-section h1 {
+      color: #1abc9c;
+      font-size: 2em;
+      margin-bottom: 20px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    .thanks-section p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .thanks-section a button {
+      background: linear-gradient(135deg, #1abc9c, #16a085);
+      border: none;
+      padding: 14px 30px;
+      color: white;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .thanks-section a button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <button class="menu-toggle">☰</button>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="oferta.html">Oferta</a></li>
+    <li><a href="aprendizaje.html">¿Qué aprenderás?</a></li>
+    <li><a href="comunidad.html">Comunidad</a></li>
+    <li><a href="empieza.html">Empieza Hoy</a></li>
+  </ul>
+</nav>
+
+  <div class="thanks-section">
+    <h1>🎉 ¡Gracias por inscribirte!</h1>
+    <p>Tu registro ha sido exitoso. En breve recibirás un correo con los detalles de acceso a tu curso introductorio.</p>
+    <p>Estamos emocionados de que formes parte de nuestra comunidad. Prepárate para aprender, crear y transformar tu futuro con la tecnología.</p>
+    
+    <a href="index.html">
+      <button>Volver al Inicio</button>
+    </a>
+  </div>
+  <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio - Tecnología para Todos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+  <button class="menu-toggle">☰</button>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="oferta.html">Oferta</a></li>
+    <li><a href="aprendizaje.html">¿Qué aprenderás?</a></li>
+    <li><a href="comunidad.html">Comunidad</a></li>
+    <li><a href="empieza.html">Empieza Hoy</a></li>
+  </ul>
+</nav>
+
+  <section id="inicio">
+  <div class="hero">
+    <h1>💻 Aprende Programación y Tecnología para Todos</h1>
+    <p class="hero-subtitle">Tecnología sin límites de edad. Nunca es demasiado temprano ni demasiado tarde para aprender.</p>
+    
+    <div class="hero-benefits">
+      <p>✔ Despierta tu creatividad</p>
+      <p>✔ Desarrolla habilidades para el futuro</p>
+      <p>✔ Forma parte de una comunidad inclusiva</p>
+    </div>
+
+    <div class="cta">
+      <a href="empieza.html">
+        <button>¡Empieza Hoy!</button>
+      </a>
+    </div>
+  </div>
+</section>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

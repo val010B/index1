@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Qué aprenderás? - Tecnología para Todos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+  <button class="menu-toggle">☰</button>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="oferta.html">Oferta</a></li>
+    <li><a href="aprendizaje.html">¿Qué aprenderás?</a></li>
+    <li><a href="comunidad.html">Comunidad</a></li>
+    <li><a href="empieza.html">Empieza Hoy</a></li>
+  </ul>
+</nav>
+
+  <section id="aprendizaje">
+  <h2>🚀 ¿Qué aprenderás?</h2>
+  <p>En <strong>Tecnología para Todos</strong> aprenderás habilidades que abren puertas en el mundo digital. Nuestros cursos están diseñados para ser claros, prácticos e inclusivos:</p>
+  
+  <div class="skills-grid">
+    <div class="skill">
+      <h3>💻 Fundamentos de Programación</h3>
+      <p>Aprende lógica, algoritmos y pensamiento computacional. La base para cualquier lenguaje de programación.</p>
+    </div>
+    <div class="skill">
+      <h3>🌐 Desarrollo Web y Móvil</h3>
+      <p>Crea páginas web modernas y aplicaciones móviles funcionales. Desde HTML y CSS hasta frameworks avanzados.</p>
+    </div>
+    <div class="skill">
+      <h3>🤖 Robótica y Automatización</h3>
+      <p>Construye y programa robots, explora sensores y aprende a automatizar procesos del mundo real.</p>
+    </div>
+    <div class="skill">
+      <h3>🧠 Inteligencia Artificial</h3>
+      <p>Descubre cómo funcionan los sistemas inteligentes, aprende machine learning y crea proyectos con IA aplicada.</p>
+    </div>
+    <div class="skill">
+      <h3>🔒 Seguridad Digital</h3>
+      <p>Protege tu información, navega con confianza y aprende ciberseguridad básica y avanzada.</p>
+    </div>
+    <div class="skill">
+      <h3>🛠 Herramientas Digitales</h3>
+      <p>Domina aplicaciones para el día a día: comunicación, productividad, diseño y gestión de proyectos.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a href="empieza.html">
+      <button>¡Comienza tu aprendizaje hoy!</button>
+    </a>
+  </div>
+</section>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
